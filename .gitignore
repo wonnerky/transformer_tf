@@ -2,3 +2,6 @@ data/
 .idea/
 pre_train/data/
 pre_train/ckpt/
+ort_metric_eval/
+ckpt/
+extract/
