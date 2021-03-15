@@ -186,9 +186,10 @@ def train(args):
         print('Epoch {} ENDED --- Loss {:.12f} Accuracy {:.12f}\n\n'.format(epoch + 1, train_loss.result(),
                                                                             train_accuracy.result()))
 
-    if not os.path.isdir(f'{checkpoint_path}log'):
-        os.makedirs(f'{checkpoint_path}log')
-    with open(f'{checkpoint_path}log/{model_id}.json.txt', 'wb') as f:
+    log_path = os.path.join(checkpoint_path, 'log')
+    if not os.path.isdir(log_path):
+        os.makedirs(log_path)
+    with open(os.path.join(log_path, f'{model_id}.json.txt'), 'wb') as f:
         pickle.dump(log_, f)
 
 
