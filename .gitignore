@@ -2,6 +2,7 @@ data/
 .idea/
 pre_train/data/
 pre_train/ckpt/
+pre_train/utils/wiki103/
 ort_metric_eval/
 ckpt/
 extract/

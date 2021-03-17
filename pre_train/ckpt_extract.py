@@ -126,7 +126,7 @@ def extract_ckpt(args):
 
 if __name__ == '__main__':
     '''
-    python ckpt_extract.py --extract_ckpt_path ckpt/pre_train_80 --save_ckpt_path ../extract/pre_train_80/
+    python ckpt_extract.py --extract_ckpt_path ckpt/pre_train_30 --save_ckpt_path ../extract/pre_train_30/
     '''
     parser = argparse.ArgumentParser()
     # dataset configuration
